@@ -11,4 +11,4 @@ RUN apk update && \
     rm -rf /var/cache/apk/* && \
     pip install awscli
 
-RUN gem install test-kitchen kitchen-ec2 kitchen-docker kitchen-ansible kitchen-verifier-serverspec serverspec
+RUN gem install --no-ri --no-rdoc test-kitchen kitchen-ec2 kitchen-docker kitchen-ansible kitchen-verifier-serverspec serverspec
