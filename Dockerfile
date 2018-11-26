@@ -1,4 +1,4 @@
-FROM ruby:2.4-alpine
+FROM ruby:alpine
 MAINTAINER Jesse DeFer <test-kitchen-ec2@dotd.com>
 
 ENV PACKAGES build-base git openssh python2-dev py2-pip
