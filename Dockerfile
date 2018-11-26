@@ -11,6 +11,4 @@ RUN apk update && \
     rm -rf /var/cache/apk/* && \
     pip install awscli
 
-RUN gem install bundler
-COPY Gemfile /tmp
-RUN bundle install --gemfile=/tmp/Gemfile
+RUN gem install test-kitchen kitchen-ec2 kitchen-docker kitchen-ansible kitchen-verifier-serverspec serverspec
